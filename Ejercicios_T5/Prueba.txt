@@ -1,0 +1,48 @@
+Expresiones de comparación
+En el ejemplo que queremos resolver, la condición que queremos ver si se cumple o no es que x sea mayor que cero. 
+Python provee las llamadas *expresiones de comparación* que sirven para comparar valores entre sí, y que por lo tanto 
+permiten codificar ese tipo de pregunta. En particular la pregunta de sixes mayor que cero, se codifica en Python como
+x > 0.
+
+De esta forma, 5 > 3 es una expresión booleana cuyo valor es True, y 5 < 3 también es una expresión booleana, 
+pero su valor es False.
+
+>>> 5 > 3
+True
+>>> 3 > 5
+False
+>>>
+
+Los expresiones booleanas de comparación que provee Python son las siguientes:
+
+Expresión	Significado
+a == b	    a es igual a b
+a != b	    a es distinto de b
+a < b	    a es menor que b
+a <= b	    a es menor o igual que b
+a > b	    a es mayor que b
+a >= b	    a es mayor o igual que b
+
+Operadores lógicos
+De la misma manera que se puede operar entre números mediante las operaciones de suma, resta, etc., también existen 
+tres operadores lógicos para combinar expresiones booleanas: and (y), or (o) y not (no).
+
+El significado de estos operadores es igual al del castellano, pero vale la pena recordarlo:
+
+Expresión	Significado
+a and b	    El resultado es True solamente si a es True y b es True de lo contrario el resultado es False
+a or b	    El resultado es True si a es True o b es True de lo contrario el resultado es False
+not a	    El resultado es True si a es False de lo contrario el resultado es False
+
+Ejemplo.
+not (a > b) es verdadero si a > b es falso (o sea si a <= b es verdadero).
+
+>>> 5>8
+False
+>>> not (5>8)
+True
+>>> 5>2
+True
+>>> not (5>2)
+False
+>>>
